@@ -14,6 +14,11 @@ describe 'DataMapper::Adapters::SqliteAdapter' do
   let(:adapter)    { DataMapper::Spec.adapter }
   let(:repository) { DataMapper.repository(adapter.name) }
 
+  before :all do
+    @adapter    = adapter
+    @repository = repository
+  end
+
   it_should_behave_like 'An Adapter'
   it_should_behave_like 'A DataObjects Adapter'
 
