@@ -11,6 +11,7 @@ Gem::Specification.new do |gem|
   gem.summary     = 'Ardm fork of dm-sqlite-adapter'
   gem.description = 'Sqlite3 Adapter for DataMapper'
   gem.homepage    = 'https://github.org/ar-dm/ardm-sqlite-adapter'
+  gem.license     = 'MIT'
 
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {spec}/*`.split("\n")
